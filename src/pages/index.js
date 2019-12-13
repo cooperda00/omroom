@@ -12,10 +12,11 @@ const IndexPage = ({ data }) => {
       <Image
         fluid={image}
         style={{
-          maxHeight: "100vh"
+          height: "100vh",
+          width: "100vw"
         }}
         imgStyle={{
-          objectFit: "cover"
+          objectFit: "contain"
         }}
       />
 
