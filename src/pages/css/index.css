@@ -1,0 +1,12 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  background: dodgerblue;
+  position: relative;
+}
+
+.message {
+  position: absolute;
+  bottom: 0;
+  right: 1rem;
+}

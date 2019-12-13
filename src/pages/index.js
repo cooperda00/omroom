@@ -1,12 +1,46 @@
 //Modules
 import React from "react";
+import Image from "gatsby-image";
+import { graphql } from "gatsby";
+//CSS
+import "./css/index.css";
 
-const IndexPage = () => {
+const IndexPage = ({ data }) => {
+  const image = data.image.childImageSharp.fluid;
   return (
-    <>
-      <h1>Hello.....</h1>
-    </>
+    <main className="main">
+      <Image
+        fluid={image}
+        style={{
+          maxHeight: "100vh"
+        }}
+        imgStyle={{
+          objectFit: "cover"
+        }}
+      />
+
+      <div className="message">
+        <h2>Site Under Construction</h2>
+        <p>
+          In the meantime, please contact{" "}
+          <a href="mailto:mutsumi@omroom.net">mutsumi@omroom.net</a> with
+          enquiries.
+        </p>
+      </div>
+    </main>
   );
 };
+
+export const data = graphql`
+  {
+    image: file(relativePath: { eq: "logo_sky.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1800) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;
 
 export default IndexPage;
