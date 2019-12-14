@@ -24,9 +24,10 @@ const IndexPage = ({ data }) => {
         <h2>Site Under Construction</h2>
         <p>
           In the meantime, please contact{" "}
-          <a href="mailto:mutsumi@omroom.net">mutsumi@omroom.net</a> with
+          <a href="mailto:mutsumi@omroom.net">consult@omroom.net</a> with
           enquiries.
         </p>
+        <p>WhatsApp: +66 814 228 171 / +66 814 228 138</p>
       </div>
     </main>
   );
