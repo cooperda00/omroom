@@ -1,15 +1,15 @@
 export const colors = {
-  primary: "#6ec7c0",
-  primaryL: "#9fe2dd",
-  primaryLL: "#d4f6f4",
-  primaryD: "#45a69f",
-  primaryDD: "#45a69f",
+  primary: "#7FD1B8",
+  primaryL: "#B0E9D8",
+  primaryLL: "#E0F9F2",
+  primaryD: "#54B396",
+  primaryDD: "#34987A",
 
-  secondary: "#e6d6bd",
-  secondaryL: "#fff6e8",
-  secondaryLL: "#fffdf9",
-  secondaryD: "#c4ae8b",
-  secondaryDD: "#a58a5f"
+  secondary: "#FFBE9B",
+  secondaryL: "#FFD6C0",
+  secondaryLL: "#FFEEE5",
+  secondaryD: "#FFA778",
+  secondaryDD: "#E6834F"
 };
 
 export const grays = {

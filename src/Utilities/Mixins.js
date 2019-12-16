@@ -74,3 +74,9 @@ export const thinTitle = () => css`
   letter-spacing: 0.4rem;
   text-transform: uppercase;
 `;
+
+export const thinSubTitle = () => css`
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+`;
