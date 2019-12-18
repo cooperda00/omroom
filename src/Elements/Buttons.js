@@ -20,7 +20,7 @@ export const StyledButton = styled.button`
 `;
 
 export const StyledCTA = styled(Link)`
-  ${font("M")}
+  ${font("S")}
   ${thinSubTitle()};
   position: relative;
   border: none;
@@ -31,8 +31,13 @@ export const StyledCTA = styled(Link)`
   cursor: pointer;
   transition: 0.5s;
   border-bottom: 0.3rem solid ${colors.primaryD};
+  text-align: center;
 
   &:hover {
     background: ${colors.primaryD};
+  }
+
+  @media (min-width: 1000px) {
+    ${font("M")}
   }
 `;

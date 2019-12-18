@@ -2,11 +2,12 @@
 import React from "react";
 //Components
 import Layout from "../components/Layout/Layout";
+import Therapies from "../components/Therapies/Therapies";
 
 const TherapiesPage = () => {
   return (
     <Layout>
-      <h1>Therapies</h1>
+      <Therapies />
     </Layout>
   );
 };
