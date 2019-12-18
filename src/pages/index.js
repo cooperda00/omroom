@@ -1,10 +1,13 @@
 //Modules
 import React from "react";
 import { graphql } from "gatsby";
+//Styles
+import { StyledCTA } from "../Elements";
 //Components
 import Layout from "../components/Layout/Layout";
 import Hero from "../components/Hero/Hero";
-import { StyledCTA } from "../Elements";
+import BasicInfo from "../components/BasicInfo/BasicInfo";
+import Testimonials from "../components/Testimonials/Testimonials";
 
 const IndexPage = ({ data }) => {
   const bg = data.bgImage.childImageSharp.fluid;
@@ -13,7 +16,8 @@ const IndexPage = ({ data }) => {
       <Hero image={bg} title="Omroom">
         <StyledCTA to="./practitioners">Book A Session</StyledCTA>
       </Hero>
-      <section>HOME PAGE</section>
+      <BasicInfo />
+      <Testimonials />
     </Layout>
   );
 };

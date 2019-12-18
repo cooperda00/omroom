@@ -21,6 +21,11 @@ export const font = size => {
         font-size: ${fontSize.XS};
         line-height: 1.5;
       `;
+    case "VS":
+      return css`
+        font-size: ${fontSize.VS};
+        line-height: 1.5;
+      `;
     case "S":
       return css`
         font-size: ${fontSize.S};

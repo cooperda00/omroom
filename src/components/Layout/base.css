@@ -66,3 +66,31 @@ button:active {
 .active-link-footer {
   color: #e6834f !important;
 }
+
+/* React Reveal Classes (doesn't work with styled components) */
+
+.backdrop,
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+.backdrop {
+  width: 100%;
+  z-index: 1800;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.mobile-nav {
+  width: 70%;
+  background: white;
+  z-index: 1900;
+}
+
+@media screen and (min-width: 1030px) {
+  .backdrop,
+  .mobile-nav {
+    display: none;
+  }
+}

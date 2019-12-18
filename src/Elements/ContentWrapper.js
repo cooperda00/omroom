@@ -1,14 +1,22 @@
-//Modules
-import React from "react"
 //Styles
-import styled from "styled-components"
-import { maxContentWidth } from "../Utilities"
+import styled from "styled-components";
+import { maxContentWidth, font, thinTitle, spacing } from "../Utilities";
 
-export const ContentWrapper = ({ children }) => {
-  return <StyledContentWrapper>{children}</StyledContentWrapper>
-}
-
-const StyledContentWrapper = styled.div`
+export const StyledContainer = styled.section`
+  width: 100%;
   max-width: ${maxContentWidth};
-  margin: 0 auto;
-`
+  margin: 5rem auto;
+
+  h1 {
+    ${font("L")};
+    ${thinTitle()};
+    width: 100%;
+    text-align: center;
+    margin-bottom: ${spacing.L};
+    padding: 0 ${spacing.S};
+
+    @media (min-width: 500px) {
+      ${font("XL")};
+    }
+  }
+`;

@@ -33,6 +33,7 @@ export const spacing = {
 
 export const fontSize = {
   XS: "1.4rem",
+  VS: "1.5rem",
   S: "1.8rem",
   SSM: "2rem",
   SM: "2.2rem",

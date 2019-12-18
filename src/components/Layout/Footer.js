@@ -55,6 +55,14 @@ const Footer = () => (
               </Link>
             );
           })}
+          <a
+            href="https://www.villadulachuahin.com/"
+            className="nav-item villa"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Villa du Lac
+          </a>
         </div>
       </div>
 
@@ -101,6 +109,7 @@ const StyledWrapper = styled.div`
       ${font("M")};
       ${thinTitle()};
     }
+
     .nav {
       ${flex("column", "flex-start", "flex-start")}
       ${font("SM")};
@@ -115,6 +124,11 @@ const StyledWrapper = styled.div`
 
       .nav-item:hover {
         color: ${colors.secondaryDD};
+      }
+
+      .villa {
+        /* color: ${colors.secondaryDD}; */
+        color: #ADC743;
       }
     }
 
