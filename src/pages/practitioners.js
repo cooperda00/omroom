@@ -9,7 +9,14 @@ const PractitionersPage = ({ data }) => {
   const practitioners = [
     {
       name: "Mutsumi Adachi",
-      modalities: ["Memory Therapy"],
+      modalities: [
+        "Memory Therapy",
+        "Chakra Cleansing",
+        "Shamanic Light and Transformation",
+        "Past Life Regression",
+        "Tarot Reading",
+        "Cranio Sacral Therapy"
+      ],
       website: "https://mutsumi-healing.com",
       image: data.mutsumi.childImageSharp.fluid,
       bio: [
@@ -20,9 +27,9 @@ const PractitionersPage = ({ data }) => {
     },
 
     {
-      name: "John",
+      name: "John Bour",
       modalities: ["Memory Therapy"],
-      website: "https://google.com",
+      website: "",
       image: data.john.childImageSharp.fluid,
       bio: [
         "John was born in Paris, grew up in a many different asian countries and speaks 5 languages. He has a very strong penchant for all things art. As a child, he would often draw flip books to animate his stories. In high school, he moved on to fine arts and music. He studied sound engineering and film before going on to open his own film production company in Bangkok. John has since left the busy film world and is currently designing villas as well as doing interior design. He continues to compose music today.",
@@ -31,12 +38,15 @@ const PractitionersPage = ({ data }) => {
     },
 
     {
-      name: "MPS",
-      modalities: ["Unknown"],
-      website: "https://google.com",
+      name: "Michael Paul Stephens",
+      modalities: ["Reiki"],
+      website: "https://michaelpaulstephens.com",
       image: data.mps.childImageSharp.fluid,
       bio: [
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde molestiae neque aperiam facere distinctio veniam animi! Eius possimus, vel ipsa, magnam voluptatem corrupti sint quidem tempora officia, fugit repudiandae laboriosam."
+        "Michael Paul Stephens is a British author, reiki master and meditation instructor who for the last 10 years has been teaching people to understand human wellbeing and to practice simple but effective wellness techniques in life.",
+        "As a reiki master since 2006, Michael offers energy sessions with clients. All his sessions involve the recipient realizing the roots of their problems within their own life, which empowers each individual to their situation with personal compassion rather than becoming dependent on an external healer. He also trains reiki as a certified course over two days.",
+        "As a published author of spiritual and wellness books, Michael is passionate about bringing his ideas into a down-to-earth format easy to understand, practice and apply. His four books are “Provolution” (2010), “Equanimous” (2011) “Why are we Here?” (2018) and “We-Topia” (2018)",
+        "He has had several spiritual articles published including in Asia Spa Magazine, The Reiki Times and Director Magazine in Thailand and covering both corporate spirituality and personal spirituality."
       ]
     },
 

@@ -107,10 +107,14 @@ const StyledPractitioner = styled.div`
     .modalities {
       margin-bottom: ${spacing.S};
       margin-top: ${spacing.S};
+      ${flex("row", "flex-start", "center")};
+      flex-wrap: wrap;
+
       span {
         ${font("S")};
         padding: ${spacing.XS};
         margin-right: ${spacing.S};
+        margin-bottom: ${spacing.XS};
         background: ${colors.secondaryLL};
       }
     }
