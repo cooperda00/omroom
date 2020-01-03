@@ -20,7 +20,7 @@ const IndexPage = ({ data }) => {
       <Hero image={bg} title="Omroom">
         <h1>Welcome to Omroom</h1>
         <h2>Bangkok's leading facilitator of personal and spiritual growth</h2>
-        <StyledCTA to="./practitioners">Book A Session</StyledCTA>
+        <StyledCTA to="./contact">Book A Session</StyledCTA>
       </Hero>
       <BasicInfo />
       <SeparationBand image1={band1} image2={band2} image3={band3} />
