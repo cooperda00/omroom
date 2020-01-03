@@ -28,13 +28,15 @@ h3,
 h4,
 h5,
 div,
-p {
+p,
+a {
   color: hsl(24, 24%, 11%);
 }
 
 a:link,
 a:visited {
   text-decoration: none;
+  color: hsl(24, 24%, 11%);
 }
 
 a:visited {
