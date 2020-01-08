@@ -18,7 +18,7 @@ const SEO = ({ title, description }) => {
       {/* <meta name="image" content={`${siteUrl}${image}`} /> */}
 
       {/* GOOGLE ICON */}
-      {/* <link rel="shortcut icon" href="/favicon.ico" /> */}
+      <link rel="shortcut icon" href="/favicon.ico" />
 
       {/* TWITTER */}
       <meta name="twitter:card" content="summary_large_image" />
