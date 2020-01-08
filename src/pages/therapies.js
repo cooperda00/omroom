@@ -105,7 +105,7 @@ const TherapiesPage = ({ data }) => {
   ];
   return (
     <Layout>
-      <Therapies />
+      <Therapies therapies={therapies} />
     </Layout>
   );
 };
