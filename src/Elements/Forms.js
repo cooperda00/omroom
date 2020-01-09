@@ -3,7 +3,11 @@ import { font, spacing, grays, flex, thinSubTitle } from "../Utilities";
 
 export const StyledForm = styled.form`
   ${flex("column", "flex-start", "center")};
-  /* padding-top: ${spacing.L}; */
+  width: 90%;
+
+  @media (min-width: 1000px) {
+    width: 50%;
+  }
 
   .input-group {
     ${flex("column", "flex-start", "center")};
@@ -15,14 +19,16 @@ export const StyledForm = styled.form`
       ${font("M")};
       display: block;
       margin-bottom: ${spacing.S};
-      width: 40rem;
+      width: 100%;
+      /* max-width: 40rem; */
     }
 
     input,
     textarea {
       padding: ${spacing.S};
       ${font("M")};
-      width: 40rem;
+      width: 100%;
+      /* max-width: 50rem; */
       border: 1px solid ${grays[3]};
     }
 

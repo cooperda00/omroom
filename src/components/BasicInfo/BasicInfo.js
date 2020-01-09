@@ -69,6 +69,7 @@ const StyledWrapper = styled.div`
 
       p {
         ${font("SM")};
+        text-align: justify;
       }
     }
   }

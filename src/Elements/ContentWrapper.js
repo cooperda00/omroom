@@ -19,4 +19,9 @@ export const StyledContainer = styled.section`
       ${font("XL")};
     }
   }
+
+  .not-found-link {
+    color: dodgerblue;
+    cursor: pointer;
+  }
 `;

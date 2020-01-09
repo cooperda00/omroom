@@ -90,7 +90,7 @@ button:active {
   z-index: 1900;
 }
 
-@media screen and (min-width: 1030px) {
+@media screen and (min-width: 1200px) {
   .backdrop,
   .mobile-nav {
     display: none;

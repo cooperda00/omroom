@@ -9,6 +9,7 @@ import Hero from "../components/Hero/Hero";
 import BasicInfo from "../components/BasicInfo/BasicInfo";
 import Testimonials from "../components/Testimonials/Testimonials";
 import SeparationBand from "../components/SeparationBand/SeparationBand";
+import SEO from "../components/SEO/SEO";
 
 const IndexPage = ({ data }) => {
   const bg = data.bgImage.childImageSharp.fluid;
@@ -17,6 +18,7 @@ const IndexPage = ({ data }) => {
   const band3 = data.band_3.childImageSharp.fluid;
   return (
     <Layout>
+      <SEO title="Home" description="Home" />
       <Hero image={bg} title="Omroom">
         <h1>Welcome to Omroom</h1>
         <h2>Bangkok's leading facilitator of personal and spiritual growth</h2>

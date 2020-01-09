@@ -87,11 +87,12 @@ const Contact = () => {
 
         <StyledDetails>
           <p className="subtitle">Email:</p>
-          <p className="detail">
+          <p className="email">
             <a href="emailto:consult@omroom.net">consult@omroom.net</a>
           </p>
           <p className="subtitle">WhatsApp:</p>
-          <p className="detail">+66 814 228 171 / +66 814 228 138</p>
+          <p className="detail">+66 814 228 171 </p>
+          <p className="detail"> +66 814 228 138</p>
         </StyledDetails>
       </StyledFlexContainer>
     </StyledContainer>
@@ -122,8 +123,16 @@ const StyledDetails = styled.div`
   }
 
   .detail {
-    margin-bottom: ${spacing.M};
     padding-left: ${spacing.S};
+  }
+
+  .email {
+    padding-left: ${spacing.S};
+    margin-bottom: ${spacing.M};
+
+    a {
+      color: dodgerblue;
+    }
   }
 `;
 

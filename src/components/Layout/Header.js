@@ -28,6 +28,8 @@ const Header = () => {
     toggleMenuStatus(!menuStatus);
   };
 
+  console.log(menuStatus);
+
   return (
     <StyledHeader>
       <div className="HeaderContentContainer">
@@ -60,6 +62,7 @@ const Header = () => {
 
         <Slide right when={menuStatus}>
           {menuStatus && (
+            //Styles in base.css
             <nav className="mobile-nav">
               <MobileNavContent>
                 {menu.map((menuItem, i) => {

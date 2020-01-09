@@ -4,6 +4,7 @@ import { graphql } from "gatsby";
 //Components
 import Layout from "../components/Layout/Layout";
 import Practitioners from "../components/Practitioners/Practitioners";
+import SEO from "../components/SEO/SEO";
 
 const PractitionersPage = ({ data }) => {
   const practitioners = [
@@ -65,6 +66,7 @@ const PractitionersPage = ({ data }) => {
   ];
   return (
     <Layout>
+      <SEO title="Practitioners" description="Practitioners" />
       <Practitioners practitioners={practitioners} />
     </Layout>
   );
