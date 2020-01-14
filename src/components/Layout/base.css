@@ -39,10 +39,6 @@ a:visited {
   color: hsl(24, 24%, 11%);
 }
 
-a:visited {
-  color: hsl(24, 24%, 11%);
-}
-
 /* Button Reset */
 button {
   display: inline-block;

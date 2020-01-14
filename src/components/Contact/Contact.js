@@ -101,6 +101,7 @@ const Contact = () => {
 
 const StyledFlexContainer = styled.div`
   ${flex("column", "flex-start", "center")};
+  width: 80%;
 
   @media (min-width: 1000px) {
     ${flex("row", "center", "flex-start")};
@@ -116,6 +117,7 @@ const StyledDetails = styled.div`
     ${flex("column", "flex-start", "flex-start")};
     padding-left: ${spacing.L};
     margin-top: 0;
+    width: 50%;
   }
 
   .subtitle {

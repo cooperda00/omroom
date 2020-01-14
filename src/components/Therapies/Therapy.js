@@ -80,7 +80,7 @@ const StyledCard = styled.div`
 
     p {
       ${font("S")};
-      background: ${colors.secondaryLL};
+      background: ${colors.primaryLL};
       margin-right: ${spacing.S};
       padding: 0 ${spacing.S};
     }

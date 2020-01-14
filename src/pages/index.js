@@ -33,7 +33,7 @@ const IndexPage = ({ data }) => {
 
 export const query = graphql`
   {
-    bgImage: file(relativePath: { eq: "omroom_interior.jpg" }) {
+    bgImage: file(relativePath: { eq: "lotus_1.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1920) {
           ...GatsbyImageSharpFluid
@@ -41,7 +41,7 @@ export const query = graphql`
       }
     }
 
-    band_1: file(relativePath: { eq: "sep_1.jpg" }) {
+    band_1: file(relativePath: { eq: "space_1.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid
@@ -57,7 +57,7 @@ export const query = graphql`
       }
     }
 
-    band_3: file(relativePath: { eq: "sep_3.jpg" }) {
+    band_3: file(relativePath: { eq: "space_3.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid

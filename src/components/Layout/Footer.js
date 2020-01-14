@@ -128,7 +128,7 @@ const StyledWrapper = styled.div`
 
       .villa {
         /* color: ${colors.secondaryDD}; */
-        color: #ADC743;
+        /* color: #ADC743; */
       }
     }
 

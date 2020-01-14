@@ -10,10 +10,10 @@ const SeparationBand = ({ image1, image2, image3 }) => {
     <StyledBand>
       <div className="container">
         <div className="image-container">
-          <Image fluid={image2} className="image" alt="" />
+          <Image fluid={image1} className="image" alt="" />
         </div>
         <div className="image-container">
-          <Image fluid={image1} className="image" alt="" />
+          <Image fluid={image2} className="image" alt="" />
         </div>
         <div className="image-container">
           <Image fluid={image3} className="image" alt="" />

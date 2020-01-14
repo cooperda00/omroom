@@ -21,9 +21,9 @@ const PractitionersPage = ({ data }) => {
       website: "https://mutsumi-healing.com",
       image: data.mutsumi.childImageSharp.fluid,
       bio: [
-        "Mutsumi was born in Tokyo with her Chinese diplomat father and her Japanese artist mother. As a child she was already fluent in Chinese, Japanese and English. She used to be an active fashion designer in Paris, and an amateur for French fusion cooking, with her French husband, they moved to Hong Kong where she had her own fashion trading company.",
-        "During her business activity she was trained and followed the Japanese Shingo Esoterism teaching and became a lay disciple. She was a certified Great Vinaya master. She served as a medium and teacher for over 16 years for Shinnyo-en Buddhism organization. Living in Thailand since 1997, which she sees to be a hub of intensive learning for herself and for the not oppose around her.",
-        "Mutsumi now promoting holistic energy hearings through Omroom, her wishes to make Omroom a place to introduce different modalities of healing and to help people to discover Self and walk the path of awareness. Mutsumi develops & provides her unique Qi healing courses to many different countries in the globe. This includes Collective awareness and intuitive development Tarot for healing, and memory therapy with sound fork healing. Now she travels around the world to offer her sessions & teach workshops."
+        "Mutsumi was born in Tokyo with her Chinese diplomat father and her Japanese artist mother. She is fluent in Chinese, Japanese and English. She used to be an active fashion designer in Paris until she moved to Hong Kong with her French husband where she had her own fashion trading company.",
+        "She was trained in the Japanese Shingo Esoterism teachings and became a lay disciple. She was a certified Great Vinaya master. She served as a medium and teacher for over 16 years for Shinnyo-en Buddhism organization. She has been living in Thailand since 1997, which she sees as a hub of intensive learning.",
+        "Mutsumi now promotes holistic energy healings from varied modalities through Omroom, to help people to discover the Self and walk the path of awareness. Mutsumi develops & provides her unique Qi healing courses around th globe. This includes Collective awareness and intuitive development Tarot for healing, and memory therapy with sound fork healing."
       ]
     },
 

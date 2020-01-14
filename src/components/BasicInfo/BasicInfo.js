@@ -26,14 +26,12 @@ const BasicInfo = () => {
 
         <div>
           <p>
-            Our supported modalities range from the clinical, such as Biotherapy
-            and Hypnotherapy, the traditional, such as Chinese Medicine as well
-            as the therapeutic such as Reiki, Yoga and Body Talk. Omroom offers
-            spiritual and wellness seekers a diverse range of modalities from
-            Monday to Friday 10AM - 8PM with special classes and appointment
-            only sessions on Saturdays and Sundays. Appointments via Skype are
-            also possible. Visit Omroom, Bangkok’s little spiritual haven and be
-            well! Also be sure to check out{" "}
+            Our supported modalities range from the clinical, such as
+            Hypnotherapy, to the therapeutic, such as Reiki and Yoga. Omroom
+            offers spiritual and wellness seekers a diverse range of modalities
+            by appointment only. Please contact us to set up a session. Sessions
+            via Skype or WhatsApp are also possible. Visit Omroom, Bangkok’s
+            little spiritual haven and be well! Also be sure to check out{" "}
             <a href="https://www.villadulachuahin.com/">
               Villa du Lac by Omroom
             </a>{" "}

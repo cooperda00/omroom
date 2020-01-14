@@ -5,6 +5,7 @@ import Image from "gatsby-image";
 //Styles
 import styled from "styled-components";
 import { flex, colors, font, thinSubTitle, spacing } from "../../Utilities";
+import { StyledCTA } from "../../Elements";
 
 const Practitioner = ({ practitioner }) => {
   return (
@@ -36,6 +37,7 @@ const Practitioner = ({ practitioner }) => {
             <p key={i}>{paragraph}</p>
           ))}
         </div>
+        <StyledCTA to="/contact">Book A Session</StyledCTA>
       </div>
     </StyledPractitioner>
   );
@@ -48,7 +50,7 @@ const StyledPractitioner = styled.div`
 
   @media (min-width: 1000px) {
     ${flex("row", "space-between", "flex-start")};
-    height: 52rem;
+    height: 55rem;
     margin-bottom: ${spacing.L};
   }
 
@@ -115,11 +117,12 @@ const StyledPractitioner = styled.div`
         padding: ${spacing.XS};
         margin-right: ${spacing.S};
         margin-bottom: ${spacing.XS};
-        background: ${colors.secondaryLL};
+        background: ${colors.primaryLL};
       }
     }
 
     .bios {
+      margin-bottom: ${spacing.M};
       @media (min-width: 1000px) {
         padding-right: ${spacing.M};
       }

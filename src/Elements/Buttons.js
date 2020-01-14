@@ -27,7 +27,7 @@ export const StyledCTA = styled(Link)`
   border-radius: 0.2rem;
   background: ${colors.primary};
   padding: ${spacing.S} ${spacing.SM};
-  color: ${grays[5]};
+  color: ${grays[5]} !important;
   cursor: pointer;
   transition: 0.5s;
   border-bottom: 0.3rem solid ${colors.primaryD};
