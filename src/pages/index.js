@@ -10,6 +10,7 @@ import BasicInfo from "../components/BasicInfo/BasicInfo";
 import Testimonials from "../components/Testimonials/Testimonials";
 import SeparationBand from "../components/SeparationBand/SeparationBand";
 import SEO from "../components/SEO/SEO";
+import Video from "../components/Video/Video";
 
 const IndexPage = ({ data }) => {
   const bg = data.bgImage.childImageSharp.fluid;
@@ -25,6 +26,7 @@ const IndexPage = ({ data }) => {
         <StyledCTA to="./contact">Book A Session</StyledCTA>
       </Hero>
       <BasicInfo />
+      <Video />
       <SeparationBand image1={band1} image2={band2} image3={band3} />
       <Testimonials />
     </Layout>
