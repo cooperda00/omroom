@@ -62,6 +62,18 @@ const PractitionersPage = ({ data }) => {
         "His strong conviction is that once he he accepts a client, he will put his heart and soul fully into it to make sure that the issues at hand are resolved and the clients can move forward and be happy.",
         "At Omroom, Dr. Narindr is offering Hypnotherapy and Reconnective Energy Healing. From time to time there will be workshops being organized for group healing and self-healing learning."
       ]
+    },
+
+    {
+      name: "Wanee Tipchindachaikul",
+      modalities: ["Reconnective Healing", "Massage"],
+      website: "",
+      image: data.wanee.childImageSharp.fluid,
+      bio: [
+        "    Wanee, a Reconnective Healing Foundational Practioner and Massage Practioner from Thailand started her journey as a professional healer in 2014. She has passion for holistic healing from personal need to solve Chronic pain patterns stemming from a variety of injuries.",
+        "In her youth she had many falls and a few car accidents, which created a reduction in range of motion and body ailments. Wanee’s foundation for her intuitive, and productive bodywork sessions came from her study and practice of meditation, myofascial release, trigger-point therapy and Rolfing.",
+        "She has also studied Body Talk, Reiki, Craniosacral Therapy and Reconnective Healing. Wanee works with her clients from around the world to find success in movement and becoming more conscious, functional and healthy in body and mind."
+      ]
     }
   ];
   return (
@@ -99,6 +111,14 @@ export const query = graphql`
     }
 
     narindr: file(relativePath: { eq: "narindr_bio.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    wanee: file(relativePath: { eq: "wanee.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid

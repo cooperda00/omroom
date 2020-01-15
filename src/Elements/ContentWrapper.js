@@ -20,12 +20,13 @@ export const StyledContainer = styled.section`
     ${font("L")};
     ${thinTitle()};
     /* width: 100%; */
-    /* text-align: center; */
-    margin-bottom: ${spacing.L};
+    text-align: center;
+    /* margin-bottom: ${spacing.L}; */
     padding: 0 ${spacing.S};
     border: 0.2rem solid ${grays[5]};
     border-radius: 3px;
     padding: ${spacing.S} ${spacing.M};
+    margin: 0 ${spacing.S} ${spacing.L} ${spacing.S};
 
     @media (min-width: 500px) {
       ${font("XL")};

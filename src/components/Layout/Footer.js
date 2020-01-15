@@ -38,37 +38,51 @@ const Footer = () => (
             );
           })}
         </div>
-      </div>
 
-      <div className="nav-wrapper">
-        <p>Navigation:</p>
-        <div className="nav">
-          {menu.map((menuItem, i) => {
-            return (
-              <Link
-                key={i}
-                to={menuItem.path}
-                className="nav-item"
-                activeClassName="active-link-footer"
-              >
-                {menuItem.name}
-              </Link>
-            );
-          })}
-          <a
-            href="https://www.villadulachuahin.com/"
-            className="nav-item villa"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Villa du Lac
-          </a>
+        <div className="nav-wrapper">
+          <p>Navigation:</p>
+          <div className="nav">
+            {menu.map((menuItem, i) => {
+              return (
+                <Link
+                  key={i}
+                  to={menuItem.path}
+                  className="nav-item"
+                  activeClassName="active-link-footer"
+                >
+                  {menuItem.name}
+                </Link>
+              );
+            })}
+            <a
+              href="https://www.villadulachuahin.com/"
+              className="nav-item villa"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Villa du Lac
+            </a>
+          </div>
         </div>
       </div>
 
       <div className="facebook-widget">
         <iframe
           src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fomroombangkok&tabs=timeline&width=300&height=370&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
+          width="300"
+          height="370"
+          style={{ border: "none", overflow: "hidden" }}
+          scrolling="no"
+          frameBorder="0"
+          allowtransparency="true"
+          allow="encrypted-media"
+          title="Facebook Widget"
+        ></iframe>
+      </div>
+
+      <div className="facebook-widget">
+        <iframe
+          src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhighvibrationalbeings%2F&tabs=timeline&width=300&height=370&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
           width="300"
           height="370"
           style={{ border: "none", overflow: "hidden" }}
@@ -114,7 +128,7 @@ const StyledWrapper = styled.div`
       ${flex("column", "flex-start", "flex-start")}
       ${font("SM")};
       margin-left: 0;
-      margin-top: ${spacing.SM};
+      margin-top: ${spacing.S};
 
       .nav-item {
         ${thinSubTitle()};
@@ -151,6 +165,7 @@ const StyledWrapper = styled.div`
 
     .social-icons {
       margin-top: ${spacing.S};
+      margin-bottom: ${spacing.M};
 
       a {
         ${font("L")};
