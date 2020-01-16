@@ -1,7 +1,7 @@
 //Modules
 import React from "react";
 import Image from "gatsby-image";
-//Components
+import { navigate } from "gatsby";
 //Styles
 import styled from "styled-components";
 import { flex, colors, font, thinSubTitle, spacing } from "../../Utilities";
@@ -9,7 +9,7 @@ import { StyledCTA } from "../../Elements";
 
 const Practitioner = ({ practitioner }) => {
   return (
-    <StyledPractitioner>
+    <StyledPractitioner id={practitioner.id}>
       <div className="image-container">
         <Image
           fluid={practitioner.image}
@@ -29,7 +29,14 @@ const Practitioner = ({ practitioner }) => {
         </a>
         <p className="modalities">
           {practitioner.modalities.map((modality, i) => (
-            <span key={i}>{modality}</span>
+            <span
+              key={i}
+              onClick={() => {
+                navigate(`/therapies/#${modality.id}`);
+              }}
+            >
+              {modality.name}
+            </span>
           ))}
         </p>
         <div className="bios">
@@ -118,6 +125,7 @@ const StyledPractitioner = styled.div`
         margin-right: ${spacing.S};
         margin-bottom: ${spacing.XS};
         background: ${colors.primaryLL};
+        cursor: pointer;
       }
     }
 

@@ -11,12 +11,12 @@ const PractitionersPage = ({ data }) => {
     {
       name: "Mutsumi Adachi",
       modalities: [
-        "Memory Therapy",
-        "Chakra Cleansing",
-        "Shamanic Light and Transformation",
-        "Past Life Regression",
-        "Tarot Reading",
-        "Cranio Sacral Therapy"
+        { name: "Memory Therapy", id: "memory" },
+        { name: "Chakra Cleansing", id: "chakra" },
+        { name: "Shamanic Light and Transformation", id: "shamanic" },
+        { name: "Past Life Regression", id: "past" },
+        { name: "Tarot Reading", id: "tarot" },
+        { name: "Cranio Sacral Therapy", id: "cranio" }
       ],
       website: "https://mutsumi-healing.com",
       image: data.mutsumi.childImageSharp.fluid,
@@ -24,23 +24,25 @@ const PractitionersPage = ({ data }) => {
         "Mutsumi was born in Tokyo with her Chinese diplomat father and her Japanese artist mother. She is fluent in Chinese, Japanese and English. She used to be an active fashion designer in Paris until she moved to Hong Kong with her French husband where she had her own fashion trading company.",
         "She was trained in the Japanese Shingo Esoterism teachings and became a lay disciple. She was a certified Great Vinaya master. She served as a medium and teacher for over 16 years for Shinnyo-en Buddhism organization. She has been living in Thailand since 1997, which she sees as a hub of intensive learning.",
         "Mutsumi now promotes holistic energy healings from varied modalities through Omroom, to help people to discover the Self and walk the path of awareness. Mutsumi develops & provides her unique Qi healing courses around th globe. This includes Collective awareness and intuitive development Tarot for healing, and memory therapy with sound fork healing."
-      ]
+      ],
+      id: "mutsumi"
     },
 
     {
       name: "John Bour",
-      modalities: ["Memory Therapy"],
+      modalities: [{ name: "Memory Therapy", id: "memory" }],
       website: "",
       image: data.john.childImageSharp.fluid,
       bio: [
         "John was born in Paris, grew up in a many different asian countries and speaks 5 languages. He has a very strong penchant for all things art. As a child, he would often draw flip books to animate his stories. In high school, he moved on to fine arts and music. He studied sound engineering and film before going on to open his own film production company in Bangkok. John has since left the busy film world and is currently designing villas as well as doing interior design. He continues to compose music today.",
         "Having grown up as a third culture child, John is able to analyze things from different perspectives allowing him to approach situations without any particular belief system. He learned meditation at a very young age and continues this practice today in several forms and can be very quick to connect to 'Source'. At Omroom, John offers his own kind of memory therapy which he learned and developed through training with his mother, Mutsumi (practitioner and founder of Omroom) and other healing modalities. John is a strong empath and is often described by his clients as kind, calm and grounding"
-      ]
+      ],
+      id: "john"
     },
 
     {
       name: "Michael Paul Stephens",
-      modalities: ["Reiki"],
+      modalities: [{ name: "Reiki", id: "reiki" }],
       website: "https://michaelpaulstephens.com",
       image: data.mps.childImageSharp.fluid,
       bio: [
@@ -48,12 +50,16 @@ const PractitionersPage = ({ data }) => {
         "As a reiki master since 2006, Michael offers energy sessions with clients. All his sessions involve the recipient realizing the roots of their problems within their own life, which empowers each individual to their situation with personal compassion rather than becoming dependent on an external healer. He also trains reiki as a certified course over two days.",
         "As a published author of spiritual and wellness books, Michael is passionate about bringing his ideas into a down-to-earth format easy to understand, practice and apply. His four books are “Provolution” (2010), “Equanimous” (2011) “Why are we Here?” (2018) and “We-Topia” (2018)",
         "He has had several spiritual articles published including in Asia Spa Magazine, The Reiki Times and Director Magazine in Thailand and covering both corporate spirituality and personal spirituality."
-      ]
+      ],
+      id: "michael"
     },
 
     {
       name: "Dr Narindr Vang",
-      modalities: ["Hypnotherapy", "Reconnective Energy Healing"],
+      modalities: [
+        { name: "Hypnotherapy", id: "hypno" },
+        { name: "Reconnective Energy Healing", id: "reconnective" }
+      ],
       website: "https://theenergyhealer.net",
       image: data.narindr.childImageSharp.fluid,
       bio: [
@@ -61,19 +67,24 @@ const PractitionersPage = ({ data }) => {
         "Dr Narindr has spent his time both overseas and locally, and as such has extensive experience dealing with different cultures, issues and needs. His healing is very intuitive and creative, as he strongly believes that every person is different both in terms of past events and meaning in life, thus every session is custom made with integrated healing modalities.",
         "His strong conviction is that once he he accepts a client, he will put his heart and soul fully into it to make sure that the issues at hand are resolved and the clients can move forward and be happy.",
         "At Omroom, Dr. Narindr is offering Hypnotherapy and Reconnective Energy Healing. From time to time there will be workshops being organized for group healing and self-healing learning."
-      ]
+      ],
+      id: "narindr"
     },
 
     {
       name: "Wanee Tipchindachaikul",
-      modalities: ["Reconnective Healing", "Massage"],
+      modalities: [
+        { name: "Reconnective Energy Healing", id: "reconnective" },
+        { name: "Massage", id: "massage" }
+      ],
       website: "",
       image: data.wanee.childImageSharp.fluid,
       bio: [
         "    Wanee, a Reconnective Healing Foundational Practioner and Massage Practioner from Thailand started her journey as a professional healer in 2014. She has passion for holistic healing from personal need to solve Chronic pain patterns stemming from a variety of injuries.",
         "In her youth she had many falls and a few car accidents, which created a reduction in range of motion and body ailments. Wanee’s foundation for her intuitive, and productive bodywork sessions came from her study and practice of meditation, myofascial release, trigger-point therapy and Rolfing.",
         "She has also studied Body Talk, Reiki, Craniosacral Therapy and Reconnective Healing. Wanee works with her clients from around the world to find success in movement and becoming more conscious, functional and healthy in body and mind."
-      ]
+      ],
+      id: "wanee"
     }
   ];
   return (

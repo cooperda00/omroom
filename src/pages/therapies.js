@@ -16,7 +16,11 @@ const TherapiesPage = ({ data }) => {
         "By talking to the energy of the related person while you followed her guided words into a meditative mind, your brain & heart will get into a coherence state. Your mind will shift into theta brain wave, we can reverse your belief system and set free the old energy that has been carried from your family members.",
         "Plus implement the real potential of who you are, expand your energy field."
       ],
-      practitioners: ["Mutsumi Adachi", "John Bour"]
+      practitioners: [
+        { name: "Mutsumi Adachi", id: "mutsumi" },
+        { name: "John Bour", id: "john" }
+      ],
+      id: "memory"
     },
 
     {
@@ -28,7 +32,8 @@ const TherapiesPage = ({ data }) => {
         "We will use colour, shapes, metaphors to let you release the blocked energy.",
         "Clear and release unnecessary energy with the help of your innate wisdom."
       ],
-      practitioners: ["Mutsumi Adachi"]
+      practitioners: [{ name: "Mutsumi Adachi", id: "mutsumi" }],
+      id: "shamanic"
     },
 
     {
@@ -38,7 +43,8 @@ const TherapiesPage = ({ data }) => {
         "Chakras are our energy system, interior and exteriorly connected to everything around us.",
         "Detect your blockage through the memories stuck inside your energy chakras, bring you back to the true essence of yourself."
       ],
-      practitioners: ["Mutsumi Adachi"]
+      practitioners: [{ name: "Mutsumi Adachi", id: "mutsumi" }],
+      id: "chakra"
     },
 
     {
@@ -51,7 +57,8 @@ const TherapiesPage = ({ data }) => {
 
         "Past life regression therapy is typically thought to be best for helping people to explore a spiritual path and it is gaining recognition as a type of spiritual healing. But whether you follow a religion or not, it is thought that by experiencing yourself as a soul in other lifetimes, you gain a profound awareness that you are more than a physical body. Your old patterns and beliefs are easily explained in a Past life Regression Therapy session."
       ],
-      practitioners: ["Mutsumi Adachi"]
+      practitioners: [{ name: "Mutsumi Adachi", id: "mutsumi" }],
+      id: "past"
     },
 
     {
@@ -61,7 +68,8 @@ const TherapiesPage = ({ data }) => {
         "When you are in the cross road of your life, we can use Tarot cards which rich in colours, archetypes, numbers and collective symbols.",
         "We can guide you to see the reality from another perspective. And take a leap to your new possibility in the future."
       ],
-      practitioners: ["Mutsumi Adachi"]
+      practitioners: [{ name: "Mutsumi Adachi", id: "mutsumi" }],
+      id: "tarot"
     },
 
     {
@@ -70,7 +78,8 @@ const TherapiesPage = ({ data }) => {
       info: [
         "CST is a non-invasive, hands-on therapy that aims to enhance the body's own healing capabilities. It uses a gentle touch to manipulate the joints in the cranium or skull, parts of the pelvis, and the spine to treat disease."
       ],
-      practitioners: ["Mutsumi Adachi"]
+      practitioners: [{ name: "Mutsumi Adachi", id: "mutsumi" }],
+      id: "cranio"
     },
 
     {
@@ -80,7 +89,8 @@ const TherapiesPage = ({ data }) => {
         "Reiki is an often misunderstood and poorly taught spiritual practice. It is not a cure for all things. Nor is about good and bad energy. It is not even about becoming ‘a healer’ or a wellness expert. Reiki is a process of self-discovery.",
         "When Michael first started learning reiki in 2006, he didn’t believe that it worked. But after over a decade of practice an detaching the art of reiki, he has seen the effects. Reiki not only helps people to understand the conditions they are facing in their lives but, most importantly, it helps the practitioners to evolve their attitudes, reduce their ego and see a reflection of themselves in others around them."
       ],
-      practitioners: ["Michael Paul Stephens"]
+      practitioners: [{ name: "Michael Paul Stephens", id: "michael" }],
+      id: "reiki"
     },
 
     {
@@ -89,7 +99,8 @@ const TherapiesPage = ({ data }) => {
       info: [
         "Dr. Narindr can provide hypnotherapy to treat a number of issues, including weight loss, smoking cessation and stress relief, as well as provide tools to help you with relationships, money, addiction and business issues."
       ],
-      practitioners: ["Dr. Narindr Vang"]
+      practitioners: [{ name: "Dr. Narindr Vang", id: "narindr" }],
+      id: "hypno"
     },
 
     {
@@ -101,7 +112,11 @@ const TherapiesPage = ({ data }) => {
         "RH is tangible, measurable and you can actually feel it. RH has completely transcended traditional energy healing techniques as it allows us to let go of the concept and approach of technique. While science continues to explore how it works.",
         "RH is not therapy or treatment. It is A CHANGE."
       ],
-      practitioners: ["Dr. Narindr Vang"]
+      practitioners: [
+        { name: "Dr. Narindr Vang", id: "narindr" },
+        { name: "Wanee Tipchindachaikul", id: "wanee" }
+      ],
+      id: "reconnective"
     }
   ];
   return (

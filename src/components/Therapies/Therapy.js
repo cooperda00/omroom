@@ -1,20 +1,30 @@
 //Modules
 import React from "react";
 import Image from "gatsby-image";
+import { navigate } from "gatsby";
 //Styles
 import styled from "styled-components";
 import { flex, font, spacing, thinSubTitle, colors } from "../../Utilities";
 
 const Therapy = ({ therapy }) => {
   return (
-    <StyledCard>
+    <StyledCard id={therapy.id}>
       <div className="image-container">
         <Image fluid={therapy.image} className="image" />
       </div>
       <h2 className="title">{therapy.name}</h2>
       <div className="practitioners">
         {therapy.practitioners.map((practitioner, i) => {
-          return <p key={i}>{practitioner}</p>;
+          return (
+            <p
+              key={i}
+              onClick={() => {
+                navigate(`/practitioners/#${practitioner.id}`);
+              }}
+            >
+              {practitioner.name}
+            </p>
+          );
         })}
       </div>
       <div className="info">
@@ -83,6 +93,7 @@ const StyledCard = styled.div`
       background: ${colors.primaryLL};
       margin-right: ${spacing.S};
       padding: 0 ${spacing.S};
+      cursor: pointer;
     }
   }
 
