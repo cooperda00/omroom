@@ -1,6 +1,7 @@
 //Modules
 import React from "react";
 import { graphql } from "gatsby";
+import Fade from "react-reveal/Fade";
 //Styles
 import { StyledCTA } from "../Elements";
 //Components
@@ -19,16 +20,20 @@ const IndexPage = ({ data }) => {
   const band3 = data.band_3.childImageSharp.fluid;
   return (
     <Layout>
-      <SEO title="Home" description="Home" />
-      <Hero image={bg} title="Omroom">
-        <h1>Welcome to Omroom</h1>
-        <h2>Bangkok's leading facilitator of personal and spiritual growth</h2>
-        <StyledCTA to="./contact">Book A Session</StyledCTA>
-      </Hero>
-      <BasicInfo />
-      <Video />
-      <SeparationBand image1={band1} image2={band2} image3={band3} />
-      <Testimonials />
+      <Fade ssrFadeout duration={500}>
+        <SEO title="Home" description="Home" />
+        <Hero image={bg} title="Omroom">
+          <h1>Welcome to Omroom</h1>
+          <h2>
+            Bangkok's leading facilitator of personal and spiritual growth
+          </h2>
+          <StyledCTA to="./contact">Book A Session</StyledCTA>
+        </Hero>
+        <BasicInfo />
+        <Video />
+        <SeparationBand image1={band1} image2={band2} image3={band3} />
+        <Testimonials />
+      </Fade>
     </Layout>
   );
 };

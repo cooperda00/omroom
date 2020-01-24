@@ -1,6 +1,7 @@
 //Modules
 import React from "react";
 import { graphql } from "gatsby";
+import Fade from "react-reveal/Fade";
 //Components
 import Layout from "../components/Layout/Layout";
 import Practitioners from "../components/Practitioners/Practitioners";
@@ -89,8 +90,10 @@ const PractitionersPage = ({ data }) => {
   ];
   return (
     <Layout>
-      <SEO title="Practitioners" description="Practitioners" />
-      <Practitioners practitioners={practitioners} />
+      <Fade ssrFadeout duration={500}>
+        <SEO title="Practitioners" description="Practitioners" />
+        <Practitioners practitioners={practitioners} />
+      </Fade>
     </Layout>
   );
 };

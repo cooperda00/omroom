@@ -1,6 +1,7 @@
 //Modules
 import React from "react";
 import { graphql } from "gatsby";
+import Fade from "react-reveal/Fade";
 //Components
 import Layout from "../components/Layout/Layout";
 import Therapies from "../components/Therapies/Therapies";
@@ -51,11 +52,9 @@ const TherapiesPage = ({ data }) => {
       name: "Past Life Regression Therapy",
       image: data.pastLife.childImageSharp.fluid,
       info: [
-        "Past life regression is a therapeutic technique for accessing and re-experiencing a person's past lives or incarnations. Based on the theory that your reactions and the way you respond to problems are based in the past, past life regression is a holistic therapy that works with a person as a whole - not only the body and mind, but your emotions and spirit too. it's a path for personal growth and healing. To enable you to get the most out of your session, it is important to have a specific 'intention'.",
+        "Past Life Regression Therapy is a technique for accessing and re-experiencing a person's past lives or incarnations. Based on the theory that your reactions and the way you respond to problems are based in the past, Past Life Regression is a holistic therapy that works not only the body and mind, but on your emotions and spirit too.",
 
-        "By examining the experiences that are thought to have first caused the problem, practitioners can help connect their client's current issues to a past life. It is hoped that by undergoing this therapeutic process, you will be able to make connections that you were unable to before - perhaps finally providing you with some explanation, or a sense of internal peace.",
-
-        "Past life regression therapy is typically thought to be best for helping people to explore a spiritual path and it is gaining recognition as a type of spiritual healing. But whether you follow a religion or not, it is thought that by experiencing yourself as a soul in other lifetimes, you gain a profound awareness that you are more than a physical body. Your old patterns and beliefs are easily explained in a Past life Regression Therapy session."
+        "Past Life Regression Therapy is typically thought to be best for helping people to explore a spiritual path and it is gaining recognition as a type of spiritual healing. But whether you follow a religion or not, it is thought that by experiencing yourself as a soul in other lifetimes, you gain a profound awareness that you are more than a physical body. Your old patterns and beliefs are easily explained in a Past life Regression Therapy session."
       ],
       practitioners: [{ name: "Mutsumi Adachi", id: "mutsumi" }],
       id: "past"
@@ -121,8 +120,10 @@ const TherapiesPage = ({ data }) => {
   ];
   return (
     <Layout>
-      <SEO title="Contact" description="Contact" />
-      <Therapies therapies={therapies} />
+      <Fade ssrFadeout duration={500}>
+        <SEO title="Contact" description="Contact" />
+        <Therapies therapies={therapies} />
+      </Fade>
     </Layout>
   );
 };

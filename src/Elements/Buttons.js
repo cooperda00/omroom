@@ -7,15 +7,15 @@ export const StyledButton = styled.button`
   ${thinSubTitle()};
   border: none;
   border-radius: 0.2rem;
-  background: ${colors.secondary};
+  background: ${colors.primary};
   padding: ${spacing.S} ${spacing.SM};
   color: ${grays[5]};
   cursor: pointer;
   transition: 0.5s;
-  border-bottom: 0.3rem solid ${colors.secondaryD};
+  border-bottom: 0.3rem solid ${colors.primaryD};
 
   &:hover {
-    background: ${colors.secondaryD};
+    background: ${colors.primaryD};
   }
 `;
 
