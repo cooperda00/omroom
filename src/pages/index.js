@@ -13,12 +13,15 @@ import SeparationBand from "../components/SeparationBand/SeparationBand";
 import SEO from "../components/SEO/SEO";
 import Video from "../components/Video/Video";
 import Notices from "../components/Notices/Notices";
+import Events from "../components/Events/Events";
 
 const IndexPage = ({ data }) => {
   const bg = data.bgImage.childImageSharp.fluid;
   const band1 = data.band_1.childImageSharp.fluid;
   const band2 = data.band_2.childImageSharp.fluid;
   const band3 = data.band_3.childImageSharp.fluid;
+  const events = data.events.edges;
+
   return (
     <Layout>
       <Fade ssrFadeout duration={500}>
@@ -34,6 +37,7 @@ const IndexPage = ({ data }) => {
         <BasicInfo />
         <Video />
         <SeparationBand image1={band1} image2={band2} image3={band3} />
+        <Events events={events} />
         <Testimonials />
       </Fade>
     </Layout>
@@ -70,6 +74,26 @@ export const query = graphql`
       childImageSharp {
         fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    events: allContentfulOmroomEvent {
+      edges {
+        node {
+          id
+          title
+          timestamp
+          date
+          url
+          text {
+            text
+          }
+          image {
+            fluid {
+              ...GatsbyContentfulFluid
+            }
+          }
         }
       }
     }
