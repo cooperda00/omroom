@@ -1,4 +1,4 @@
-# Mind Body Spirit Fair Bangkok
+# Omroom
 
 ## Description
 
